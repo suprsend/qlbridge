@@ -169,8 +169,7 @@ func newTreeFuncs(pager TokenPager, fr FuncResolver) *tree {
 
 // ParseExpression parse a single Expression, returning an Expression Node
 //
-//    ParseExpression("5 * toint(item_name)")
-//
+//	ParseExpression("5 * toint(item_name)")
 func ParseExpression(expressionText string) (Node, error) {
 	l := lex.NewLexer(expressionText, lex.LogicalExpressionDialect)
 	pager := NewLexTokenPager(l)
@@ -183,8 +182,7 @@ func ParseExpression(expressionText string) (Node, error) {
 // MustParse parse a single Expression, returning an Expression Node
 // and panics if it cannot be parsed
 //
-//    MustParse("5 * toint(item_name)")
-//
+//	MustParse("5 * toint(item_name)")
 func MustParse(expressionText string) Node {
 	n, err := ParseExpression(expressionText)
 	if err != nil {
@@ -197,8 +195,7 @@ func MustParse(expressionText string) Node {
 //
 // @fr = function registry with any additional functions
 //
-//    ParseExprWithFuncs("5 * toint(item_name)", funcRegistry)
-//
+//	ParseExprWithFuncs("5 * toint(item_name)", funcRegistry)
 func ParseExprWithFuncs(p TokenPager, fr FuncResolver) (Node, error) {
 	t := newTreeFuncs(p, fr)
 	// Parser panics on unexpected syntax, convert this into an err
@@ -443,12 +440,23 @@ func (t *tree) cInner(n Node, depth int) Node {
 					t.unexpected(t.Cur(), "expected array on right side of INTERSECTS")
 				}
 				return NewBinaryNode(cur, n, in)
-			case lex.TokenLeftParenthesis, lex.TokenLeftBracket:
+			case lex.TokenLeftBracket:
+				// Right side is an array of values
+				t.Next()
+				val, err := ValueArray(depth, t.TokenPager)
+				if err != nil {
+					t.errorf("Could not build an array: %v", err)
+				}
+				return NewBinaryNode(cur, n, NewValueNode(val))
+			case lex.TokenLeftParenthesis:
 				// The 2nd argument is an array node
 				return NewBinaryNode(cur, n, t.ArrayNode(depth))
 			case lex.TokenUdfExpr:
 				fn := t.Next() // consume Function Name
 				return NewBinaryNode(cur, n, t.Func(depth, fn))
+			case lex.TokenValue, lex.TokenString:
+				v := t.Next()
+				return NewBinaryNode(cur, n, NewStringNode(v.V))
 			default:
 				t.unexpected(t.Cur(), "expected array on right side of INTERSECTS")
 			}
@@ -814,8 +822,9 @@ func (t *tree) ArrayNode(depth int) Node {
 }
 
 // ValueArray
-//     IN ("a","b","c")
-//     ["a","b","c"]
+//
+//	IN ("a","b","c")
+//	["a","b","c"]
 func ValueArray(depth int, pg TokenPager) (value.Value, error) {
 
 	vals := make([]value.Value, 0)
