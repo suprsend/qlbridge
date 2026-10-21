@@ -9,14 +9,14 @@ import (
 	"strings"
 
 	// Side-Effect Import the qlbridge sql driver
-	_ "github.com/araddon/qlbridge/qlbdriver"
-	"github.com/araddon/qlbridge/schema"
+	_ "github.com/suprsend/qlbridge/qlbdriver"
+	"github.com/suprsend/qlbridge/schema"
 
 	u "github.com/araddon/gou"
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/expr/builtins"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/expr/builtins"
+	"github.com/suprsend/qlbridge/value"
 )
 
 var (

@@ -11,11 +11,11 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"golang.org/x/net/context"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/schema"
-	"github.com/araddon/qlbridge/value"
-	"github.com/araddon/qlbridge/vm"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/schema"
+	"github.com/suprsend/qlbridge/value"
+	"github.com/suprsend/qlbridge/vm"
 )
 
 const (

@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/rel"
-	"github.com/araddon/qlbridge/vm"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/rel"
+	"github.com/suprsend/qlbridge/vm"
 )
 
 func TestFindIncludes(t *testing.T) {

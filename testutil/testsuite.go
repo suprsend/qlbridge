@@ -9,11 +9,11 @@ import (
 
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/datasource/membtree"
-	td "github.com/araddon/qlbridge/datasource/mockcsvtestdata"
-	"github.com/araddon/qlbridge/exec"
-	"github.com/araddon/qlbridge/expr/builtins"
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/datasource/membtree"
+	td "github.com/suprsend/qlbridge/datasource/mockcsvtestdata"
+	"github.com/suprsend/qlbridge/exec"
+	"github.com/suprsend/qlbridge/expr/builtins"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 var runInitOnce = sync.Once{}

@@ -1,8 +1,8 @@
 package rel
 
 import (
-	"github.com/araddon/qlbridge/rel"
 	"github.com/dataux/dataux/vendored/mixer/sqlparser"
+	"github.com/suprsend/qlbridge/rel"
 	surgesql "github.com/surge/sqlparser"
 	"testing"
 )

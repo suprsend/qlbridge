@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/value"
 )
 
 var (

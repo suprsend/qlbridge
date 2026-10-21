@@ -6,9 +6,9 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/rel"
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/rel"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 // NextIdFunc is the id generation function to give statements

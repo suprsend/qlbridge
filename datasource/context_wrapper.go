@@ -11,8 +11,8 @@ import (
 
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/value"
 )
 
 type ContextWrapper struct {

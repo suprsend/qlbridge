@@ -7,9 +7,9 @@ import (
 	u "github.com/araddon/gou"
 	"github.com/lytics/datemath"
 
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/lex"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/lex"
+	"github.com/suprsend/qlbridge/value"
 )
 
 // DateConverter can help inspect a boolean expression to determine if there is

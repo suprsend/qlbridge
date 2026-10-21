@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/araddon/qlbridge/testutil"
+	"github.com/suprsend/qlbridge/testutil"
 )
 
 func TestMain(m *testing.M) {

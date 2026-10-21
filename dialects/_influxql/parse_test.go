@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	u "github.com/araddon/gou"
-	"github.com/araddon/qlbridge/lex"
 	"github.com/stretchr/testify/assert"
+	"github.com/suprsend/qlbridge/lex"
 )
 
 var (

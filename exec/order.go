@@ -7,10 +7,10 @@ import (
 
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/plan"
-	"github.com/araddon/qlbridge/vm"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/plan"
+	"github.com/suprsend/qlbridge/vm"
 )
 
 // Order
