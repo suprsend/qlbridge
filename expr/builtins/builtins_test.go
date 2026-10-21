@@ -11,13 +11,13 @@ import (
 
 	"github.com/araddon/dateparse"
 	u "github.com/araddon/gou"
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/expr/builtins"
-	"github.com/araddon/qlbridge/testutil"
-	"github.com/araddon/qlbridge/value"
-	"github.com/araddon/qlbridge/vm"
 	"github.com/stretchr/testify/assert"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/expr/builtins"
+	"github.com/suprsend/qlbridge/testutil"
+	"github.com/suprsend/qlbridge/value"
+	"github.com/suprsend/qlbridge/vm"
 )
 
 func TestMain(m *testing.M) {

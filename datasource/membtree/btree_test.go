@@ -10,12 +10,12 @@ import (
 	u "github.com/araddon/gou"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/datasource/membtree"
-	"github.com/araddon/qlbridge/plan"
-	"github.com/araddon/qlbridge/rel"
-	"github.com/araddon/qlbridge/schema"
-	"github.com/araddon/qlbridge/testutil"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/datasource/membtree"
+	"github.com/suprsend/qlbridge/plan"
+	"github.com/suprsend/qlbridge/rel"
+	"github.com/suprsend/qlbridge/schema"
+	"github.com/suprsend/qlbridge/testutil"
 )
 
 const (

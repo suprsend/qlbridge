@@ -12,8 +12,8 @@ import (
 	u "github.com/araddon/gou"
 	"github.com/dchest/siphash"
 
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/value"
 )
 
 var _ = u.EMPTY

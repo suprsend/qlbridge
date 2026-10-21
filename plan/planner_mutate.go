@@ -5,7 +5,7 @@ import (
 
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 var (

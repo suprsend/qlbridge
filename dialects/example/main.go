@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/araddon/qlbridge/lex"
+	"github.com/suprsend/qlbridge/lex"
 	"strings"
 )
 

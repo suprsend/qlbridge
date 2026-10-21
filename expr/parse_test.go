@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	u "github.com/araddon/gou"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/expr/builtins"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/expr/builtins"
 )
 
 var (

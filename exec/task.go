@@ -7,8 +7,8 @@ import (
 
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/plan"
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/plan"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 const (

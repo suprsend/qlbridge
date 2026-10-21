@@ -4,11 +4,11 @@ import (
 	"database/sql/driver"
 	"testing"
 
-	"github.com/araddon/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/datasource"
 
-	"github.com/araddon/qlbridge/datasource/memdb"
-	"github.com/araddon/qlbridge/schema"
 	"github.com/stretchr/testify/assert"
+	"github.com/suprsend/qlbridge/datasource/memdb"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 func TestApplySchema(t *testing.T) {

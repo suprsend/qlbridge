@@ -4,8 +4,8 @@ import (
 	u "github.com/araddon/gou"
 	"github.com/lytics/cloudstorage"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 var (

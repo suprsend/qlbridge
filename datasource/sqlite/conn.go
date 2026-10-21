@@ -15,12 +15,12 @@ import (
 	// Import driver for sqlite
 	_ "github.com/mattn/go-sqlite3"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/exec"
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/plan"
-	"github.com/araddon/qlbridge/rel"
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/exec"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/plan"
+	"github.com/suprsend/qlbridge/rel"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 var (

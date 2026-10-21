@@ -3,9 +3,9 @@ package vm
 import (
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/rel"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/rel"
+	"github.com/suprsend/qlbridge/value"
 )
 
 // EvalSql Is a partial SQL statement evaluator (that doesn't get it all right).  See

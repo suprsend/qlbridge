@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/araddon/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/datasource"
 )
 
 func TestIndex(t *testing.T) {

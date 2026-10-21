@@ -11,10 +11,10 @@ import (
 	u "github.com/araddon/gou"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/araddon/qlbridge/datasource"
-	"github.com/araddon/qlbridge/datasource/mockcsv"
-	td "github.com/araddon/qlbridge/datasource/mockcsvtestdata"
-	tu "github.com/araddon/qlbridge/testutil"
+	"github.com/suprsend/qlbridge/datasource"
+	"github.com/suprsend/qlbridge/datasource/mockcsv"
+	td "github.com/suprsend/qlbridge/datasource/mockcsvtestdata"
+	tu "github.com/suprsend/qlbridge/testutil"
 )
 
 var (

@@ -2,7 +2,7 @@ package influxql
 
 import (
 	u "github.com/araddon/gou"
-	"github.com/araddon/qlbridge/lex"
+	"github.com/suprsend/qlbridge/lex"
 	"strings"
 )
 

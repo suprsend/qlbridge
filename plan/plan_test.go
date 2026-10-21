@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	td "github.com/araddon/qlbridge/datasource/mockcsvtestdata"
-	"github.com/araddon/qlbridge/testutil"
+	td "github.com/suprsend/qlbridge/datasource/mockcsvtestdata"
+	"github.com/suprsend/qlbridge/testutil"
 )
 
 func TestMain(m *testing.M) {

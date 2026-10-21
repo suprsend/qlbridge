@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	u "github.com/araddon/gou"
-	"github.com/araddon/qlbridge/lex"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/lex"
+	"github.com/suprsend/qlbridge/value"
 )
 
 var (

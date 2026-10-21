@@ -11,8 +11,8 @@ import (
 	// Import Sqlite driver
 	_ "github.com/mattn/go-sqlite3"
 
-	"github.com/araddon/qlbridge/expr"
-	"github.com/araddon/qlbridge/schema"
+	"github.com/suprsend/qlbridge/expr"
+	"github.com/suprsend/qlbridge/schema"
 )
 
 const (

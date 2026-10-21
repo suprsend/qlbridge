@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/araddon/qlbridge/datasource"
-	td "github.com/araddon/qlbridge/datasource/mockcsvtestdata"
-	"github.com/araddon/qlbridge/schema"
-	"github.com/araddon/qlbridge/testutil"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/datasource"
+	td "github.com/suprsend/qlbridge/datasource/mockcsvtestdata"
+	"github.com/suprsend/qlbridge/schema"
+	"github.com/suprsend/qlbridge/testutil"
+	"github.com/suprsend/qlbridge/value"
 )
 
 func TestMain(m *testing.M) {

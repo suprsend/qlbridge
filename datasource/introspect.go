@@ -7,8 +7,8 @@ import (
 
 	u "github.com/araddon/gou"
 
-	"github.com/araddon/qlbridge/schema"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/schema"
+	"github.com/suprsend/qlbridge/value"
 )
 
 var (

@@ -7,8 +7,8 @@ import (
 	"github.com/araddon/dateparse"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/araddon/qlbridge/lex"
-	"github.com/araddon/qlbridge/value"
+	"github.com/suprsend/qlbridge/lex"
+	"github.com/suprsend/qlbridge/value"
 )
 
 type testDialect struct {
